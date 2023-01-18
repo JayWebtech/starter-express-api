@@ -2,6 +2,10 @@ const express = require("express");
 const app = express()
 const server = require("http").Server(app)
 const lgaList = require("./lga");
+const cors = require('cors');
+app.use(cors({
+    origin: '*'
+}));
 
 app.get("/", (req, res) => {
     try{
