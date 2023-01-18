@@ -10,7 +10,7 @@ app.get("/", (req, res) => {
             res.send(Object.values(lgaList.lgaList[state]));
         } 
     }catch (err){
-        res.send("Error: Make sure the state name is correct");
+        res.send("Error: Inavalid state name");
     }
 });
 
